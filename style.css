@@ -715,3 +715,21 @@ section {
         }
         .info-side { order: -1; } /* Контакты будут выше формы на мобилках */
     }
+
+    .trainer-item:hover, .price-card:hover {
+    transform: translateY(-10px); /* Приподнимаем карточку на 10 пикселей */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Делаем тень чуть гуще */
+    transition: all 0.3s ease; /* Делаем движение плавным, а не резким */
+}
+
+/* Чтобы эффект работал плавно, добавь transition и в обычное состояние (без hover) */
+.trainer-item, .price-card {
+    transition: all 0.3s ease;
+}
+
+.send-btn:hover, .btn-more:hover {
+    background-color: #00c2cb; /* Закрашиваем бирюзовым при наведении */
+    color: white; /* Текст становится белым */
+    border-color: #00c2cb;
+    transition: 0.3s;
+}
